@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\setstretch{1}
+\usepackage[english]{babel}
+\usepackage[]{amssymb} 
+%\usepackage[enable]{darkmode} 
+\usepackage{amsmath, amsthm}
+\usepackage{mdframed}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usetikzlibrary{pgfplots.fillbetween}  
+\pgfplotsset{compat=1.17} 
+\makeatletter
+\newcommand{\tpmod}[1]{{\@displayfalse\pmod{#1}}}
+\makeatother
+
+\mdfdefinestyle{problemstyle}{
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    outerlinewidth=1pt,
+    topline=true,
+    bottomline=true,
+    leftline=true,
+    rightline=true
+}
+
+%custom enviroment for exercises
+\newenvironment{exercise}{
+    \begin{mdframed}[style=problemstyle]\textcolor{black}{}
+}{
+    \end{mdframed}
+}
+
+
+\title{TPHYS 121 Workshop Week 8}
+\author{}
+\date{\vspace{-15ex}}
+
+\begin{document}
+\maketitle
+
+\section*{Module 4 Problems}
+\subsection*{Exercise 1}
+For each of the following let $g=10m/s^2$ unless otherwise stated.
+\begin{exercise}
+    A $3kg$ box is pushed along a frictionless horizontal surface by a 
+    constant force of $12N$. The force is applied in the direction of 
+    motion over a distance of $5$ meters.(assume it starts at rest)
+    \begin{enumerate}[label=\alph*]
+        \item How much work is done on the box? 
+        \item What is the velocity of the box after moving $5$ meters?
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 2}
+\begin{exercise}
+    A $4kg$ object is initially moving at $6m/s$ on a rough horizontal 
+    surface. A $15N$ force is applied in the direction of motion over a 
+    distance of $4$ meters. The coefficient of kinetic friction between the
+    object and the ground is $0.125$
+    \begin{enumerate}[label=\alph*]
+        \item Calculate the total work done on the object. 
+        \item Determine the object's final velocity.
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 3}
+\begin{exercise}
+    A $6kg$ block slides on a frictionless surface at $4m/s$. It collides
+    and sticks to a $4kg$ block that was intitially at rest.
+    \begin{enumerate}
+        \item Find the velocity of both blocks after the collision. 
+        \item Is energy conserved? Why or why not?
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 4}
+\begin{exercise}
+    A $5kg$ box is pushed up a frictionless ramp inclined at $30^\cdot$ 
+    with a constant force of $40N$ applied parallel to the ramp. The box
+    starts from rest and moves $3$ meters along the ramp.
+    \begin{enumerate}
+        \item How much work is done by the applied force? 
+        \item How much work is done by the force of gravity?
+        \item What is the velocity of the box after moving $3$ meters?
+    \end{enumerate}
+\end{exercise}
+
+\section*{Additional Resources}
+\begin{itemize}
+    \item Flipping Physics on youtube: 
+        \url{https://www.youtube.com/user/flippingphysics} 
+\end{itemize}
+\end{document}
