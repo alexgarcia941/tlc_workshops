@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\setstretch{1}
+\usepackage[english]{babel}
+\usepackage[]{amssymb} 
+%\usepackage[enable]{darkmode} 
+\usepackage{amsmath, amsthm}
+\usepackage{mdframed}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usetikzlibrary{pgfplots.fillbetween}  
+\pgfplotsset{compat=1.17} 
+\makeatletter
+\newcommand{\tpmod}[1]{{\@displayfalse\pmod{#1}}}
+\makeatother
+
+\mdfdefinestyle{problemstyle}{
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    outerlinewidth=1pt,
+    topline=true,
+    bottomline=true,
+    leftline=true,
+    rightline=true
+}
+
+%custom enviroment for exercises
+\newenvironment{exercise}{
+    \begin{mdframed}[style=problemstyle]\textcolor{black}{}
+}{
+    \end{mdframed}
+}
+
+
+\title{TPHYS 121 Workshop Week 9}
+\author{}
+\date{\vspace{-15ex}}
+
+\begin{document}
+\maketitle
+
+\section*{Module 5 Problems}
+\subsection*{Exercise 1}
+\begin{exercise}
+    A solid disk with mass $m=4kg$ and radius $r=0.5m$ is mounted on
+    a frictionless axle.($I_{disk} = \frac{1}{2}mr^2$)
+    \begin{enumerate}[label=(\alph*)]
+        \item Calculate the moment of inerta of the disk about it's central
+            axis.
+        \item A force of $8N$ us applied tangentially at the rim of the disk
+            counterclockwise. Find the resulting torque.
+        \item Determine the angular acceleration of the disk.
+        \item Using the Right-Hand Rule, determine whether the torque 
+            vector points into or out of the page.
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 2}
+\begin{exercise}
+    A hollow cylinder(a thin-walled hoop) with a mass $2kg$ and radius
+    $0.4m$ is initially at rest. A force of $5N$ is applied tangentially 
+    to the rim for $3.0s$($I_{hoop} = mr^2$)
+    \begin{enumerate}[label=(\alph*)]
+        \item Find the moment of inertia of the hoop about it's central axis. 
+        \item Determine the angular acceleration of the hoop. 
+        \item Calculate the final angular velocity after $3$ seconds.
+        \item Find the rotational kinetic energy of the hoop at $3$ seconds.
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 3}
+\begin{exercise}
+    An ice skater is spinning with an initial angular velocity of $2rad/s$
+    and a moment of inertia of $I_1 = 3 kg\cdot m^2$. They pull their arms 
+    in reducing their moment of inertia to $I_2 = 1.2 kg\cdot m^2$.
+    (Angular momentum: $L=I\omega$)
+    \begin{enumerate}[label=(\alph*)]
+        \item What happens to the skaters angular speed after pulling 
+            their arms in? Why?
+        \item Find the skaters new angular velocity. 
+        \item Calculate the initial and final rotational kinetic energy.
+        \item Use the right-hand rule to determine the direction of the 
+            skaters angular momentum vector when spinning counterclockwise
+            when viewed from above.
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 2}
+\begin{exercise}
+    A $6kg$ bowling ball with radius $r=0.3m$ starts from rest and rolls
+    down a $1.5m$ tall incline without slipping.
+    \begin{enumerate}[label=(\alph*)]
+        \item Find the moment of inertia of the bowling ball.
+        \item Determine the final rotational kinetic energy at the 
+            bottom of the incline.
+        \item what is the final velocity and angular velocity of the sphere.
+    \end{enumerate}
+\end{exercise}
+\end{document}
