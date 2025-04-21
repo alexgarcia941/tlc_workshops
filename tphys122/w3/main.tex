@@ -1,0 +1,96 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\setstretch{1}
+\usepackage[english]{babel}
+\usepackage[]{amssymb} 
+%\usepackage[enable]{darkmode} 
+\usepackage{amsmath, amsthm}
+\usepackage{mdframed}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usetikzlibrary{pgfplots.fillbetween}  
+\pgfplotsset{compat=1.17} 
+\makeatletter
+\newcommand{\tpmod}[1]{{\@displayfalse\pmod{#1}}}
+\makeatother
+
+\mdfdefinestyle{problemstyle}{
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    outerlinewidth=1pt,
+    topline=true,
+    bottomline=true,
+    leftline=true,
+    rightline=true
+}
+
+%custom enviroment for exercises
+\newenvironment{exercise}{
+    \begin{mdframed}[style=problemstyle]\textcolor{black}{}
+}{
+    \end{mdframed}
+}
+
+
+\title{TPHYS 122 Workshop Week 3}
+\author{}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle
+\vspace{-10ex}%not a fan of this, but good fix for now
+
+\subsection*{Exercise 1}
+\begin{exercise}
+    A point charge $+q = 2.0 X 10^{-6} C$ is placed at the center of a
+    spherical Gaussian surface of radius $r = 0.10m$
+    \begin{enumerate}[label={\alph*}]
+        \item What is the net electric flux through the spherical surface? 
+        \item Does your answer change if the radius of the sphere is doubled?
+            Why or why not?
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 2}
+\begin{exercise}
+    A long, uniformly charged line of charge with a linear charge density
+    $\lambda = 1.0X10^{-6}$ $C/m$ is initially located at a distace 
+    $r_{1} = 0.50m$ from the wire. It is mobed radially outward to 
+    $r_{2} = 1.00m$.
+    \begin{enumerate}[label={\alph*}]
+        \item Use Gauss's Law to find the magnitude of the electric field a
+        distance $r$ from the wire.(find $E$ as a function of $r$. $E(r)$
+        \item Compare the electric field strength at $r_1$ and $r_2$. Which is
+        stronger and by what factor?
+    \end{enumerate}
+\end{exercise}
+
+\subsection*{Exercise 3}
+\begin{exercise}
+    A solid insulating sphere of radius $R = 0.10\,\mathrm{m}$ has 
+    a uniform charge density $\rho = 3.0 \times 10^{-6}\,\mathrm{C/m^3}$. 
+    Use Gauss’s Law to find the electric field in different regions of 
+    space.
+    \begin{enumerate}[label={\alph*}]
+        \item Find the electric field $E(r)$ inside the sphere, for $r < R$.
+        \item Find the electric field $E(r)$ outside the sphere, for $r > R$.
+        \item Sketch the electric field as a function of $r$ from $r = 0$ 
+            to $r = 2R$.
+    \end{enumerate}
+\end{exercise}
+
+\section*{Additional Resources}
+\begin{itemize}
+    \item Flipping Physics on youtube: 
+        \url{https://www.youtube.com/user/flippingphysics} 
+\end{itemize}
+
+\end{document}
+
