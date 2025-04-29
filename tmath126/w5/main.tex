@@ -1,0 +1,73 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\setstretch{1}
+\usepackage[english]{babel}
+\usepackage[]{amssymb} 
+%\usepackage[enable]{darkmode} 
+\usepackage{amsmath, amsthm}
+\usepackage{mdframed}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usetikzlibrary{pgfplots.fillbetween}  
+\pgfplotsset{compat=1.17} 
+\makeatletter
+\newcommand{\tpmod}[1]{{\@displayfalse\pmod{#1}}}
+\makeatother
+
+\mdfdefinestyle{problemstyle}{
+    innertopmargin=10pt,
+    innerbottommargin=10pt,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    outerlinewidth=1pt,
+    topline=true,
+    bottomline=true,
+    leftline=true,
+    rightline=true
+}
+
+%custom enviroment for exercises
+\newenvironment{exercise}{
+    \begin{mdframed}[style=problemstyle]\textcolor{black}{}
+}{
+    \end{mdframed}
+}
+
+
+\title{TMATH 126 Week 5 Workshop}
+\author{}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle
+\vspace{-5ex}%not a fan of this, but good fix for now
+
+\begin{exercise}
+    A particle moves along a path in space described by the vector-valued function
+    $$\vec{r}(t) = \langle 3cost, 3sint, t^{2} \rangle , \quad 0\le t \le 2\pi $$
+    \begin{enumerate}[label={\alph*}]
+        \item Describe the motion of the particle in words. What shape does the 
+            projection of the path make in the $xy$-plane?
+        \item Find the tangent vector $\vec{r}\,'(t)$ and compute the arc length 
+            of the curve from $t=0$ to $t=3\pi$ (set up the integral and evalute 
+            with technology)
+        \item Compute the curvature $\kappa (t)$ of the curve. What happens to the
+            curvature as $t$ increases?
+
+        \item Now let $z = f(x,y) = x^{2}+y^{2}$, and imagine the movement of the
+        particle. What does this look like geometrically.
+        \item Find the tangent plane to the surface $z = f(x,y) =x^2+y^2$ at the point where $t=0$.
+        \item Use a linear approximation to estimate  the value of $f(x,y) = x^2 + y^2$ 
+            near $(x,y)=(2.9,0.1)$.(use the tangent plane found previously) 
+    \end{enumerate}
+\end{exercise}
+
+
+
+\end{document}
+
